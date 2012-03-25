@@ -18,7 +18,6 @@ Integrade the libarys to your code:
 
 ```html
 <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
-<script type="text/javascript" src="js/jquery.jLog.1.0.min.js"></script>
 <script type="text/javascript" src="js/raphael-min.js"></script>
 <script type="text/javascript" src="js/jquery.RoundSelect.0.1.js"></script>
 ```
@@ -39,7 +38,7 @@ Create a DIV container, with the image as background:
 <div id="holder"></div>
 ```
 
-Create the forms field, witch should hold to data of you selected elipse:
+Create the forms field, which should hold to data of you selected elipse:
 
 ```html
 <input id="roundselect_cx" name="roundselect_cx" type="text"/>
