@@ -31,8 +31,11 @@ Create a DIV container, with the image as background:
 
 Create the forms field, witch should hold to data of you selected elipse:
 `<input id="roundselect_cx" name="roundselect_cx" type="text"/>
+
 <input id="roundselect_cy" name="roundselect_cy" type="text"/>
+
 <input id="roundselect_rx" name="roundselect_rx" type="text"/>
+
 <input id="roundselect_ry" name="roundselect_ry" type="text"/>`
 
 Initialize the Plugin:
