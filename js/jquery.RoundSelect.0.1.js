@@ -331,7 +331,6 @@ $.fn.RoundSelect = function(options){
     settings.resize_cor1 . mouseover(function(event){
 
       $( "body" ).css("cursor", "e-resize");
-      $.log( "in" );
       show_resize_rect( 1 );
 
     })
@@ -339,7 +338,6 @@ $.fn.RoundSelect = function(options){
     settings.resize_cor2 . mouseover(function(event){
 
       $( "body" ).css("cursor", "s-resize");
-      $.log( "in" );
       show_resize_rect( 1 );
 
     })
@@ -347,7 +345,6 @@ $.fn.RoundSelect = function(options){
     settings.resize_cor3 . mouseover(function(event){
 
       $( "body" ).css("cursor", "e-resize");
-      $.log( "in" );
       show_resize_rect( 1 );
 
     })
@@ -355,7 +352,6 @@ $.fn.RoundSelect = function(options){
     settings.resize_cor4 . mouseover(function(event){
 
       $( "body" ).css("cursor", "s-resize");
-      $.log( "in" );
       show_resize_rect( 1 );
 
     })
@@ -367,28 +363,24 @@ $.fn.RoundSelect = function(options){
     settings.resize_cor1 . mouseout(function(event){
 
       $( "body" ).css("cursor", "default");
-      $.log( "out" );
 
     })
 
     settings.resize_cor2 . mouseout(function(event){
 
       $( "body" ).css("cursor", "default");
-      $.log( "out" );
 
     })
 
     settings.resize_cor3 . mouseout(function(event){
 
       $( "body" ).css("cursor", "default");
-      $.log( "out" );
 
     })
 
     settings.resize_cor4 . mouseout(function(event){
 
       $( "body" ).css("cursor", "default");
-      $.log( "out" );
 
     })
 
@@ -500,12 +492,7 @@ $.fn.RoundSelect = function(options){
             if($('#'+settings.prefix+fields[field]).length > 0){
                $('#'+settings.prefix+fields[field]).val(settings.circle.attr(fields[field]));
             }else{
-               var newfield = $('<input>').attr({id: settings.prefix+fields[field],
-                                                  name: settings.prefix+fields[field],
-                                                  value: settings.circle.attr(fields[field]),
-                                                  type: 'text'  });
-               $('body').append(fields[field] + ' : ');
-               $('body').append(newfield);
+                $.log('jQuery RoundSelect: couldn\'t find input filed with id: '+settings.prefix+fields[field]);
             }
 
         }
