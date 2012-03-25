@@ -11,6 +11,7 @@ How to use:
 --------------------------------------
 
 Integrade the libarys to your code:
+
 `<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
 <script type="text/javascript" src="js/jquery.jLog.1.0.min.js"></script>
 <script type="text/javascript" src="js/raphael-min.js"></script>
