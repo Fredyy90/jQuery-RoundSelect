@@ -177,13 +177,13 @@ $.fn.RoundSelect = function(options){
 
       // coprners, for make resize
 
-      settings.resize_cor1 = make_corner( settinge.drager_colors['1'] );
+      settings.resize_cor1 = make_corner( settings.drager_colors['1'] );
 
-      settings.resize_cor2 = make_corner( settinge.drager_colors['1'] );
+      settings.resize_cor2 = make_corner( settings.drager_colors['1'] );
 
-      settings.resize_cor3 = make_corner( settinge.drager_colors['1'] );
+      settings.resize_cor3 = make_corner( settings.drager_colors['1'] );
 
-      settings.resize_cor4 = make_corner( settinge.drager_colors['1'] );
+      settings.resize_cor4 = make_corner( settings.drager_colors['1'] );
 
     }
 
@@ -493,7 +493,7 @@ $.fn.RoundSelect = function(options){
             if($('#'+settings.prefix+fields[field]).length > 0){
                $('#'+settings.prefix+fields[field]).val(settings.circle.attr(fields[field]));
             }else{
-                $.log('jQuery RoundSelect: couldn\'t find input filed with id: '+settings.prefix+fields[field]);
+                alert('jQuery RoundSelect: couldn\'t find input filed with id: '+settings.prefix+fields[field]);
             }
 
         }

@@ -8,6 +8,8 @@ jQuery Round Select help you to integrade a selection of round shapes of an Imag
 
 ![Screenshot](https://github.com/Fredyy90/jQuery-RoundSelect/raw/master/screenshot.jpg)
 
+[Demolink](http://www.fredyy.de/git/jQuery-RoundSelect/)
+
 
 How to use:
 --------------------------------------

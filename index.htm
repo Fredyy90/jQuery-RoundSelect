@@ -8,8 +8,6 @@
   <title>Round Selection Test</title>
 
   <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
-  <script type="text/javascript" src="js/jquery.jLog.1.0.min.js"></script>
-
   <script type="text/javascript" src="js/raphael-min.js"></script>
   <script type="text/javascript" src="js/jquery.RoundSelect.0.1.js"></script>
 
@@ -20,8 +18,8 @@
   <style>
 
     #holder{
-       width:500px;
-       height:390px;
+       width:640px;
+       height:640px;
        background-color: #eee;
        overflow: auto;
        background-image: url( "test.jpg" );
@@ -38,11 +36,13 @@
 
 
 <div id="holder"></div>
-
+<form method="post" action="test.php">
 CX: <input id="roundselect_cx" name="roundselect_cx" type="text"/><br />
 CY: <input id="roundselect_cy" name="roundselect_cy" type="text"/><br />
 RX: <input id="roundselect_rx" name="roundselect_rx" type="text"/><br />
 RY: <input id="roundselect_ry" name="roundselect_ry" type="text"/><br />
+<input type="submit"/>
+</form>
 
 <script type="text/javascript">
 $(document).ready(function(){
