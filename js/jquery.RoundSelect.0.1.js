@@ -17,6 +17,7 @@ $.fn.RoundSelect = function(options){
         resize_cor3:0,
         resize_cor4:0,
         prefix : 'roundselect_',
+        drager_colors: ['grey','grey','grey','grey']
         };
 
       var settings = $.extend({}, this._defaults, options);
@@ -176,13 +177,13 @@ $.fn.RoundSelect = function(options){
 
       // coprners, for make resize
 
-      settings.resize_cor1 = make_corner( "yellow" );
+      settings.resize_cor1 = make_corner( settinge.drager_colors['1'] );
 
-      settings.resize_cor2 = make_corner( "red" );
+      settings.resize_cor2 = make_corner( settinge.drager_colors['1'] );
 
-      settings.resize_cor3 = make_corner( "white" );
+      settings.resize_cor3 = make_corner( settinge.drager_colors['1'] );
 
-      settings.resize_cor4 = make_corner( "blue" );
+      settings.resize_cor4 = make_corner( settinge.drager_colors['1'] );
 
     }
 
