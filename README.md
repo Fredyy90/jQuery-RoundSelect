@@ -64,3 +64,9 @@ Questions or suggestions?
 ----------
 
 If you have any questions or suggestions, please feel free to contact me frederick.behrends@gmail.com.
+
+
+A special thanks goes to:
+----------
+[softm](http://publikz.com/) - for letting me proceed and finish this plugin with his example code.
+----------
