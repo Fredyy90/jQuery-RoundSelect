@@ -63,7 +63,7 @@ $.fn.RoundSelect = function(options){
 
       resize_init();
 
-      move_selection( settings.xi - settings.r, settings.yi - settings.r );
+      move_selection( settings.xi - settings.r, settings.yi - settings.r , 'both' );
 
 
 
@@ -118,7 +118,7 @@ $.fn.RoundSelect = function(options){
         cx = this.attr('cx');
         cy = this.attr('cy');
 
-       move_selection( cx - rx -1, cy - ry -1  );
+       move_selection( cx - rx -1, cy - ry -1 , 'both');
 
 
 /*
@@ -263,7 +263,7 @@ $.fn.RoundSelect = function(options){
 
     // ===== MOVE selection to new coordinates
 
-    function move_selection( x, y )
+    function move_selection( x, y , mode)
 
     {
 
@@ -279,30 +279,27 @@ $.fn.RoundSelect = function(options){
 
 
 
+      if(mode == 'x' || mode == 'both'){
+          settings.resize_cor1.attr( "x", x+2*rx-4 );
+
+          settings.resize_cor1.attr( "y", y+ry-2 );
 
 
-      settings.resize_cor1.attr( "x", x+2*rx-4 );
+          settings.resize_cor3.attr( "x", x-2 );
 
-      settings.resize_cor1.attr( "y", y+ry-2 );
+          settings.resize_cor3.attr( "y", y+ry-2 );
+      }
 
+      if(mode == 'y' || mode == 'both'){
+          settings.resize_cor2.attr( "x", x+rx-2 );
 
-
-      settings.resize_cor2.attr( "x", x+rx-2 );
-
-      settings.resize_cor2.attr( "y", y-2 );
-
-
-
-      settings.resize_cor3.attr( "x", x-2 );
-
-      settings.resize_cor3.attr( "y", y+ry-2 );
+          settings.resize_cor2.attr( "y", y-2 );
 
 
+          settings.resize_cor4.attr( "x", x+rx-2 );
 
-      settings.resize_cor4.attr( "x", x+rx-2 );
-
-      settings.resize_cor4.attr( "y", y+ry*2-2 );
-
+          settings.resize_cor4.attr( "y", y+ry*2-2 );
+      }
 
 
     }
@@ -434,6 +431,8 @@ $.fn.RoundSelect = function(options){
 
         settings.circle.attr({rx: newrx/2  });
 
+       move_selection( newrx, newcx ,'y');
+
 
 
     }
@@ -462,6 +461,7 @@ $.fn.RoundSelect = function(options){
         settings.circle.attr({cy: newcy/2  });
         settings.circle.attr({ry: newry/2 });
 
+        move_selection( settings.circle.attr('newcx'), settings.circle.attr('newrx') ,'x');
 
 
     }
